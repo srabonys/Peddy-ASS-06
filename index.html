@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peddy Website</title>
+<!--font awsome link start-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--end-->
+
+<!--google font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<!--end-->
+
+<!--tailwind  and daisyui link-->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!--end-->
+
+<link rel="stylesheet" href="styles/style.css"/>
+
+</head>
+    <body>
+        <!-- header section start -->
+         <header>
+          <!-- navbar start -->
+           <nav class="w-11/12 mx-auto flex justify-between items-center py-6">
+            <div class="flex items-center justify-start gap-2">
+              <img src="images/logo.webp" alt="">
+              <h2 class="font-bold text-2xl text-black">Peddy</h2>
+            </div>
+            <div>
+              <ul class="hidden md:flex items-center justify-center gap-8 font-bold text-black">
+                <li>Home</li>
+                <li>Shop</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+            <div>
+              <button class="btn rounded-full bg-white flex items-center justify-center">
+                <i class="fa-regular fa-user text-black font-bold"></i>
+              </button>
+            </div>
+           </nav>
+          <!--end-->
+      
+          <!-- ban-sec-start-->
+           <section class="w-11/12 mx-auto text-center flex flex-col items-center justify-center gap-8">
+            <div class="flex flex-col items-center justify-center">
+              <p class="font-semibold text-sm text-[rgba(19, 19, 19, 0.6)]">Bringing Families Together ❤️‍🔥</p>
+              <h1 class="font-extrabold text-5xl text-black mt-4 mb-4">Your Path to Adoption <br> Starts Here</h1>
+              <p class="font-bold text-base">
+                </p>
+                <a href="#main-conatainer"><button class="btn mt-5 font-bold text-base bg-[#0E7A81] text-white hover:bg-[#0E7A81]">View More</button></a>
+            </div>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a.
+            <div class="flex items-center justify-center">
+              <img src="images/pet.webp" alt="">
+            </div>
+           </section>
+          <!--end-->
+         </header>
+        <!-- header-sec-end -->
+      
+        <!-- main-sec-start-->
+         <main>
+            <section id="main-conatainer" class="w-11/12 mx-auto mt-20 flex flex-col gap-5">
+              <div class="flex flex-col items-center justify-center text-center mb-10">
+                <h2 class="font-extrabold text-4xl text-black mb-4">Adopt  Your  Best  Friend</h2>
+                <p class="font-bold text-base text-black">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
+              </div>
+              <!-- daynamic-API-->
+                <div id="btn-container" class="grid grid-cols-2 gap-6 lg:grid-cols-4 lg:gap-10">
+                  
+                </div>
+              <!--END-->
+                  <div class="flex items-center justify-between">
+                    <h2 class="font-bold text-base text-black">Best Deal For you</h2>
+                    <button class="btn bg-[#0E7A81] hover:bg-[#0E7A81] text-base text-white font-bold">
+                      Short by Price
+                    </button>
+                  </div>
+                  <!-- daynamic-card-sec-->
+      
+                    <div class="flex flex-col md:flex-row gap-8">
+                      <div id="card-container" class="w-full lg:w-8/12 grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+      
+                        <div id="daynamic-div1" class="hidden"></div>
+                           <!--loading -->
+                          <div id="loader" class="hidden">
+                            <span class="loading loading-dots loading-lg"></span>
+                          </div>
+                          <!-- load-end -->
+                           <div id="daynamic-div2" class="hidden"></div>
+                        </div>
+                      <div class="w-full lg:w-4/12 border border-gray-400 border-opacity-20 rounded-lg p-2">  
+                        <div id="photo-show" class="grid grid-cols-2 gap-2.5">
+      
+                        </div>
+                      </div>
+                    </div>
+            </section>
+              <div id="modal-container">
+              </div>
+              <dialog id="my_modal_5" class="modal">
+                <div class="modal-box flex flex-col items-center justify-center">
+                  <h3 class="text-3xlfont-extrabold">Congreats</h3>
+            
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <p>Adoption Process is Start For your Pet</p>
+                      <button>Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+            <!-- all modal close -->
+         </main>
+        <!--main-sec-end-->
+      
+        <!-- footer-sec-start-->
+         <footer class="bg-black text-white py-16 mt-16">
+          <div class="w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10">
+            <div class="flex justify-start flex-col">
+              <div class="flex gap-2">
+                <img src="images/logo.webp" alt="">
+                <h2 class="font-extrabold text-2xl">Peddy</h2>
+              </div>
+              <p class="font-semibold text-base mt-2">Location: av. Washington 165, NY CA</p>
+              <p class="font-semibold text-base mt-2">54003</p>
+              <p class="font-semibold text-base mt-2">Phone: +31 85 964 47 25</p>
+              <p class="font-semibold text-base mt-2">Email: info@yourdomain.com</p>
+              <p class="font-semibold text-base mt-2">Openings hours: 9.00 AM - 5.00 PM</p>
+      
+              <div class="flex gap-2 mt-3">
+                <img class="w-[35px]" src="images/facebook-logo.png" alt="">
+                <img class="w-[35px]" src="images/twitterx-logo.png" alt="">
+                <img class="w-[35px]" src="images/youtube-logo.png" alt="">
+                <img class="w-[35px]" src="images/instagram-logo.png" alt="">
+              </div>
+            </div>
+            <div class="flex flex-col lg:justify-start lg:items-center">
+              <div><h2 class="font-bold text-xl">Useful Links</h2>
+                <p class="font-semibold text-base mt-2 cursor-pointer">Home</p>
+                <p class="font-semibold text-base mt-2 cursor-pointer">About Us</p>
+                <p class="font-semibold text-base mt-2 cursor-pointer">Animals</p>
+                <p class="font-semibold text-base mt-2 cursor-pointer">Foundation</p>
+                <p class="font-semibold text-base mt-2 cursor-pointer">Contact</p></div>
+            </div>
+            <div class="flex flex-col lg:text-end">
+              <h2 class="font-bold text-xl mb-5 mr-28">Drop a message</h2>
+              <div>
+                <input class="bg-gray-700 text-white p-3 rounded-lg w-8/12 bg-opacity-20" type="email" placeholder="Enter your email">
+              <button type="submit" class="btn w-8/12 bg-[#0E7A81] text-white font-bold text-lg border-none hover:bg-[#0E7A81] mt-5"> Subscribe</button>
+              </div>
+            </div>
+          </div>
+         </footer>
+        <!-- footer-sec-end-->
+        <!--sc-file-link-star-->
+         <script src="script.js"></script>
+        <!--end-->
+      </body>
+      </html>
+      
